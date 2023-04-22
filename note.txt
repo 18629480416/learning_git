@@ -1,0 +1,36 @@
+/*配置git 用户名称*/
+git config --global user.name "***"    
+/*配置git 用户邮箱*/
+git config --global user.email "***"  
+
+/*初始化git 仓库*/
+git init
+
+/*查看当前提交状态 */
+git status
+
+/*添加文件到暂存区*/
+git add .
+/*将文件从暂存区删除*/
+git rm --cached file 
+
+/*恢复修改文件*/
+git restore file
+
+/* 恢复到git add 前的状态 */
+git restore --staged file
+
+
+/*提交文件到本地仓库*/
+git commit -m "提交描述"
+
+备注：此时 git status 显示：nothing to commit,working directory clean
+
+/* 删除仓库文件 */
+1. rm file
+2. 删除暂存区文件：git rm file
+3. git commit -m "描述"
+
+/*********************** 将远程仓库的代码 clone 到本地*****************/
+/* 解决无法clone github 仓库超时的问题 */
+https://blog.csdn.net/qq_36393978/article/details/128659642
