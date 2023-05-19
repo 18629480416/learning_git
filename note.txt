@@ -34,3 +34,6 @@ git commit -m "提交描述"
 /*********************** 将远程仓库的代码 clone 到本地*****************/
 /* 解决无法clone github 仓库超时的问题 */
 https://blog.csdn.net/qq_36393978/article/details/128659642
+
+/* 新建分支 */
+$ git checkout -b dbg_lichen_star
