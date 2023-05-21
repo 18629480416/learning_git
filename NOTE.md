@@ -28,13 +28,13 @@ git commit -m "提交描述"
 
 - 删除仓库文件  
   
-1. rm file
-2. 删除暂存区文件：git rm file
-3. git commit -m "描述"
+1. rm file  
+   
+2. 删除暂存区文件：git rm file  
+   
+3. git commit -m "描述"  
+   
 
-/*********************** 将远程仓库的代码 clone 到本地*****************/
-/* 解决无法clone github 仓库超时的问题 */
-https://blog.csdn.net/qq_36393978/article/details/128659642
 
 - 新建分支
 git checkout -b dbg_lichen_star
@@ -44,22 +44,34 @@ git push origin dbg_lichen_star:dbg_lichen_star
 
 # 删除远程分支、远程文件、远程文件夹
 ## 删除远程文件
-git rm --cached filename(具体删除的文件)
-git commit -m "del: xxx"
+
+git rm --cached filename(具体删除的文件)  
+
+git commit -m "del: xxx"  
+
 git push origin branch-name(具体的分支名字)
  
 ## 删除远程文件夹
-git rm -r --cached directory-name(具体删除的文件夹)
-git commit -m "del: xxx"
+
+git rm -r --cached directory-name(具体删除的文件夹)  
+
+git commit -m "del: xxx"  
+
 git push origin branch-name(具体的分支名字)
 
 ## 删除远程分支
-- git查看分支：
-查看本地分支 git branch
-查看远程分支 git branch -r
+- git查看分支：  
+  
+查看本地分支 git branch  
+
+查看远程分支 git branch -r  
+
 查看本地和远程分支 git branch -a
 
+
 - git删除分支：
-删除本地分支 git branch -d 本地分支名
+  
+删除本地分支 git branch -d 本地分支名  
+
 删除远程分支 git push origin --delete 远程分支名
 
